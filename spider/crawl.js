@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const urls = require('./urls.json');
+const urls = require('../data/urls.json');
 const fs = require('fs');
 
 
@@ -18,7 +18,7 @@ let articles = {};
     await page.waitFor(1000);
   }
 
-  fs.writeFile('articles.json', JSON.stringify(articles), encoding='utf8', (err) => {
+  fs.writeFile('../data/articles.json', JSON.stringify(articles), encoding='utf8', (err) => {
     if (err) throw err;
   });
 
