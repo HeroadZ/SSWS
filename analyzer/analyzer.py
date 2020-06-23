@@ -52,11 +52,8 @@ def freAna(data):
     return fre_d
 
 
-def main():
+if __name__ == "__main__":
     data = util.read_data('../data/seg.json')
     fre_d = freAna(data)
     for k in util.CATEGORY:
         makeImage(fre_d[k], img='../resources/pika.jpg', file_name='res_wc/'+k+'.png')
-
-if __name__ == "__main__":
-    main()
