@@ -49,7 +49,7 @@ def freAna(data):
             fre_d[k] += v
     for k, v in fre_d.items():
         fre_d[k] = {a: b for a, b in Counter(v).most_common() if a not in stopwords}
-    return fre_d
+    return fre_
 
 
 if __name__ == "__main__":
