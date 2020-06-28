@@ -9,3 +9,5 @@ Simplest Single Wechat official account Spider.
 3. 新建一个json文件，将获取到的所有历史文章url保存。
 4. 安装puppeteer。
 5. 使用命令`node crawl.js`运行爬虫，最终获取到的所有页面保存到json文件中。
+
+具体的文档和教程请参见[我的博客](https://behappy.cc/2020/06/28/the-simplest-single-wechat-official-account-spider/)
